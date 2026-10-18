@@ -38,6 +38,6 @@ The results screen feels flat. Give it a stronger sense of arrival: animate the 
 
 ## Resumen y pasos siguientes
 
-Has creado el cuestionario y lo has perfeccionado con una solicitud acotada. Continúa con la [lección 2: Recoger las instrucciones del proyecto][next-lesson].
+Has creado el cuestionario y lo has perfeccionado con una solicitud acotada. Continúa con la [lección 2: Generar instrucciones del proyecto][next-lesson].
 
 [next-lesson]: ../2-project-instructions/

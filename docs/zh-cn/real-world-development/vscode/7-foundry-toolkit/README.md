@@ -10,7 +10,7 @@ lastUpdated: 2026-09-16
 | [← 上一课：迭代 GitHub Copilot 的工作][previous-lesson] |
 |:--|
 
-完成练习 6 后，VS Code 学习路径的必修部分就结束了。本可选扩展使用 VS Code 中的 GitHub Copilot Chat 和 Microsoft Foundry Toolkit，将 Tailspin 目录转化为 Backer Concierge，将其部署为托管代理，并通过本地代理服务连接到网站。
+完成练习 6 后，VS Code 学习路径的必修部分就结束了。本可选扩展使用 VS Code 中的 GitHub Copilot Chat 和 Microsoft Foundry Toolkit，将 Tailspin 目录转化为 Backer Concierge，将其部署为托管智能体，并通过本地代理服务连接到网站。
 
 ## 场景
 
@@ -23,11 +23,11 @@ lastUpdated: 2026-09-16
 | 模块 | 完成检查点 |
 |--------|-----------------------|
 | [1. 准备项目和模型][module-1] | 已导出目录，并根据数据依据规则测试已部署的模型 |
-| [2. 构建并部署代理][module-2] | 已调试本地代理，并测试托管代理 |
-| [3. 将代理连接到网站][module-3] | 已对本地代理服务和无障碍小组件进行端到端测试 |
+| [2. 构建并部署智能体][module-2] | 已调试本地智能体，并测试托管智能体 |
+| [3. 将智能体连接到网站][module-3] | 已对本地代理服务和无障碍小组件进行端到端测试 |
 
 > [!IMPORTANT]
-> Microsoft Foundry Toolkit 和托管代理目前处于公共预览阶段。这些模块会创建计费的 Azure 资源，包括模型部署和托管代理。订阅权限、区域可用性、配额和费用可能限制参与。
+> Microsoft Foundry Toolkit 和托管智能体目前处于公共预览阶段。这些模块会创建计费的 Azure 资源，包括模型部署和托管智能体。订阅权限、区域可用性、配额和费用可能限制参与。
 
 ## 开始之前
 
@@ -47,7 +47,7 @@ lastUpdated: 2026-09-16
 > 如果在模块 1 中批准了其他资源组名称，请在下面所有命令中将 `rg-tailspin-toys` 替换为该名称。
 
 1. 在各自的终端中停止已启动的 Agent Inspector 调试会话、Azure Functions 主机和 Astro 开发服务器。
-2. 如果在模块 2 中部署了托管代理，请在包含 `azure.yaml` 的生成代理目录中打开终端，选择同一个 `azd` 环境，然后运行：
+2. 如果在模块 2 中部署了托管智能体，请在包含 `azure.yaml` 的生成智能体目录中打开终端，选择同一个 `azd` 环境，然后运行：
 
    ```bash
    azd down --purge
@@ -83,7 +83,7 @@ lastUpdated: 2026-09-16
 ## 资源
 
 - [适用于 Visual Studio Code 的 Foundry Toolkit][foundry-toolkit]
-- [Microsoft Foundry 代理扩展概述][foundry-extension]
+- [Microsoft Foundry 智能体扩展概述][foundry-extension]
 
 | [下一模块：准备项目和模型 →][module-1] |
 |--:|

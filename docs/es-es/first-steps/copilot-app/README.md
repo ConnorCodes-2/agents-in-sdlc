@@ -22,7 +22,7 @@ El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un ún
 | [1. Crear el área de trabajo][lesson-1] | Creación | Inicia una sesión Interactive en una carpeta local vacía |
 | [2. Crear y perfeccionar][lesson-2] | Creación | Crea el cuestionario y perfecciónalo en el explorador integrado |
 | [3. Inspeccionar y probar][lesson-3] | Contexto y pruebas | Revisa los detalles del proyecto y del uso y, después, ejecuta una prueba de humo en el explorador |
-| [4. Recoger las instrucciones del proyecto][lesson-4] | Instrucciones | Genera y adapta las instrucciones del agente con `/init` |
+| [4. Generar instrucciones del proyecto][lesson-4] | Instrucciones | Genera y adapta las instrucciones del agente con `/init` |
 | [5. Publicar el proyecto][lesson-5] | Publicación | Crea un repositorio público de GitHub a partir del proyecto local |
 | [6. Trabajar con incidencias y sesiones][lesson-6] | Implementación | Crea un backlog, implementa una incidencia en un árbol de trabajo aislado y revisa las diferencias |
 | [7. Planificar antes de editar][lesson-7] | Planificación | Utiliza el modo Plan para acordar un enfoque para una segunda incidencia |

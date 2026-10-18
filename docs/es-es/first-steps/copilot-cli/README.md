@@ -20,7 +20,7 @@ El taller dura aproximadamente entre 60 y 90 minutos. El proyecto utiliza un ún
 | ------ | ----- | ---------------- |
 | [0. Requisitos previos y configuración][lesson-0] | Configuración | Comprueba los requisitos previos, instala Copilot CLI, inicia sesión y elige un modelo |
 | [1. Crear el cuestionario][lesson-1] | Creación | Crea el cuestionario desde la terminal y realiza un cambio concreto |
-| [2. Recoger las instrucciones del proyecto][lesson-2] | Instrucciones | Genera y adapta las instrucciones del agente con `/init` |
+| [2. Generar instrucciones del proyecto][lesson-2] | Instrucciones | Genera y adapta las instrucciones del agente con `/init` |
 | [3. Publicar el proyecto][lesson-3] | Publicación | Inicializa, crea un commit y publica mediante un prompt o manualmente |
 | [4. Trabajar en incidencias en paralelo][lesson-4] | Implementación | Crea un backlog, añade una incidencia al chat, revisa con `/diff` e inicia una segunda sesión en un árbol de trabajo |
 | [5. Planificar antes de editar][lesson-5] | Planificación | Utiliza `/plan` para acordar un enfoque para la segunda incidencia |

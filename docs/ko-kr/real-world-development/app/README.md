@@ -42,12 +42,12 @@ lastUpdated: 2026-09-17
 
 워크숍에 참여하기 전에 다음 항목을 준비했는지 확인합니다.
 
-- [ ] 활성 **Copilot Student, Pro, Pro+, Business, or Enterprise** 플랜이 있는 GitHub 계정
-- [ ] **macOS, Linux, or Windows**를 실행하는 컴퓨터
+- [ ] 활성 **Copilot Student, Pro, Pro+, Business 또는 Enterprise** 플랜이 있는 GitHub 계정
+- [ ] **macOS, Linux 또는 Windows**를 실행하는 컴퓨터
 - [ ] 컴퓨터에 [Git 설치][install-git]
 
 > [!TIP]
-> 유료 플랜이 없습니까? 인증된 학생은 [GitHub Education][callout-student-plan-education]을 통해 GitHub Copilot을 무료로 사용할 수 있습니다. **Copilot Student** 플랜에는 이 워크숍에서 사용하는 에이전트, MCP, 코드 검토, Copilot CLI 기능이 포함되어 있으므로 모든 실습 과정을 완료할 수 있습니다.
+> 유료 플랜이 없습니까? 인증된 학생은 [GitHub Education][callout-student-plan-education]을 통해 GitHub Copilot을 무료로 사용할 수 있습니다. **Copilot Student** 플랜에는 이 워크숍에서 사용하는 에이전트, MCP, 코드 검토, Copilot CLI 기능이 포함되어 있으므로 모든 실습을 완료할 수 있습니다.
 
 > [!NOTE]
 > Copilot app은 codespace가 아니라 사용자의 컴퓨터에서 실행되므로, [레슨 0][ex0]에서는 앱을 설치하기 전에 Node.js를 설치하고 프로젝트 복사본을 만드는 방법을 안내합니다.

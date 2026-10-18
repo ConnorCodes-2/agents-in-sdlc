@@ -19,7 +19,7 @@ GitHub MCP를 활성화하면 Copilot이 채팅에서 직접 이슈를 만들고
 다음 프롬프트를 보냅니다.
 
 ```plaintext
-Review the space quiz and suggest three focused feature ideas. Use the GitHub tools to create a separate issue for each with a clear title, user-focused description, and acceptance criteria. Do not implement them yet.
+우주 퀴즈를 검토하고 구체적인 기능 아이디어 세 가지를 제안합니다. GitHub 도구를 사용해 명확한 제목, 사용자 중심 설명, 수락 기준을 포함한 이슈를 각 아이디어별로 만듭니다. 아직 구현하지 않습니다.
 ```
 
 ## 이슈 하나 구현하기

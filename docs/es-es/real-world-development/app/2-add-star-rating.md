@@ -18,7 +18,7 @@ En esta lección:
 
 ## Escenario
 
-Cada juego de Tailspin Toys puede tener una valoración por estrellas, que ya aparece en la página de detalles del juego. Sin embargo, las tarjetas de los juegos de la página de inicio solo muestran el título, la categoría, el editor y la descripción. Como ejercicio inicial, pedirás al agente que muestre la valoración existente en cada tarjeta. Es un cambio pequeño y autocontenido, perfecto para tu primera sesión.
+Cada juego de Tailspin Toys puede tener una valoración por estrellas, que ya aparece en la página de detalles del juego. Sin embargo, las tarjetas de los juegos de la página de inicio solo muestran el título, la categoría, la editorial y la descripción. Como ejercicio inicial, pedirás al agente que muestre la valoración existente en cada tarjeta. Es un cambio pequeño y autocontenido, perfecto para tu primera sesión.
 
 ## Anatomía de una sesión
 
@@ -70,7 +70,7 @@ Todos los cambios generados por IA deben revisarse antes de combinarlos, incluso
 
 ## Comprobar los cambios
 
-Revisa los resultados de las comprobaciones automatizadas del agente antes de abrir un navegador. Confirma que las pruebas cubren un `starRating` numérico y la alternativa para `null`. Un requisito previo ausente o una comprobación omitida no cuentan como superados; revisa cualquier solicitud de instalación antes de aprobarla.
+Revisa los resultados de las comprobaciones automatizadas del agente antes de abrir un navegador. Confirma que las pruebas cubren un `starRating` numérico y el caso en que `starRating` es `null`. Un requisito previo ausente o una comprobación omitida no cuentan como superados; revisa cualquier solicitud de instalación antes de aprobarla.
 
 Por supuesto, no basta con leer el código y dar por hecho que funciona. Vamos a pedir a Copilot que abra el sitio web para examinar la interfaz actualizada. Para ello, le pediremos que inicie el sitio y lo abra en un lienzo de navegador.
 

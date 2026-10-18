@@ -1,5 +1,5 @@
 ---
-title: "Lección 4 - Recoger las instrucciones del proyecto"
+title: "Lección 4 - Generar instrucciones del proyecto"
 description: "Ejecuta /init para generar instrucciones del agente que describan el Space Quiz terminado y adáptalas a tu forma de trabajar."
 authors:
   - jamesmontemagno
@@ -14,7 +14,7 @@ En esta lección:
 - revisarás el archivo generado antes de aceptarlo.
 - reducirás y personalizarás las instrucciones.
 
-## Recoge las reglas con `/init`
+## Genera instrucciones con `/init`
 
 Incluye un prompt después de `/init`. Si envías el comando sin texto adicional, puede aparecer `Command input required`.
 
@@ -29,7 +29,7 @@ Incluye un prompt después de `/init`. Si envías el comando sin texto adicional
 
 ## Adáptalo a ti
 
-El archivo de instrucciones no sirve solo para recoger datos del proyecto. Añade los detalles que de otro modo repetirías en cada prompt, como tu forma preferida de escribir código, las convenciones de nomenclatura, las bibliotecas que deben evitarse y la cantidad de comentarios que quieres. Cada sesión futura lee este archivo antes de leer tu prompt.
+El archivo de instrucciones no se limita a describir el proyecto. Añade los detalles que de otro modo repetirías en cada prompt, como tu forma preferida de escribir código, las convenciones de nomenclatura, las bibliotecas que deben evitarse y la cantidad de comentarios que quieres. Cada sesión futura lee este archivo antes de leer tu prompt.
 
 ## Resumen y pasos siguientes
 

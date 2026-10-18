@@ -43,6 +43,6 @@ El explorador integrado puede enviar un elemento concreto directamente al chat, 
 
 ## Resumen y pasos siguientes
 
-Has creado, previsualizado y perfeccionado el cuestionario sin salir del editor. Continúa con la [lección 2: Recoger las instrucciones del proyecto][next-lesson].
+Has creado, previsualizado y perfeccionado el cuestionario sin salir del editor. Continúa con la [lección 2: Generar instrucciones del proyecto][next-lesson].
 
 [next-lesson]: ../2-project-instructions/

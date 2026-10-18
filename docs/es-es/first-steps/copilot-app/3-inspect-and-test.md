@@ -62,6 +62,6 @@ Todavía no se ha escrito nada en Git. En la siguiente lección ejecutarás `/in
 
 ## Resumen y pasos siguientes
 
-Has confirmado los detalles del proyecto y del uso de la sesión y, después, has comprobado el cuestionario con una prueba de humo en el explorador. Continúa con la [lección 4: Recoger las instrucciones del proyecto][next-lesson].
+Has confirmado los detalles del proyecto y del uso de la sesión y, después, has comprobado el cuestionario con una prueba de humo en el explorador. Continúa con la [lección 4: Generar instrucciones del proyecto][next-lesson].
 
 [next-lesson]: ../4-project-instructions/

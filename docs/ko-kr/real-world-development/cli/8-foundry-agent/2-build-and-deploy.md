@@ -35,11 +35,11 @@ Tailspin Toys에는 모델의 일회성 답변 이상이 필요합니다. 후원
 1. Copilot CLI에 다음 프롬프트를 입력합니다.
 
     ```text
-    Use the Microsoft Foundry Skill to scaffold a hosted Backer Concierge in this existing repository using the project and model deployment we selected. Start from the Python 3.13 Basic hosted-agent sample, use Microsoft Agent Framework with the Responses API and code deployment, and keep the agent in agent/backer-concierge. Keep one azure.yaml at the repository root with a service using host: azure.ai.agent.
+    Microsoft Foundry 스킬을 사용해 선택한 프로젝트와 모델 배포를 기반으로 기존 리포지토리에 호스팅되는 Backer Concierge의 기본 구조를 만듭니다. Python 3.13 Basic 호스팅 에이전트 샘플에서 시작하고, Responses API와 코드 배포를 사용하는 Microsoft Agent Framework를 사용합니다. 에이전트는 `agent/backer-concierge`에 둡니다. 리포지토리 루트에 `host: azure.ai.agent`를 사용하는 서비스가 포함된 `azure.yaml` 파일 하나를 둡니다.
 
-    Ground every answer in db/catalog.json. Never invent games, publishers, ratings, funding totals, backer counts, pledge tiers, prices, player counts, play times, or release dates. Ask one short clarifying question when a request is vague and preserve conversation context. Ensure the catalog is copied into the deployable service during preparation so the deployed agent never depends on a file outside its service directory. Add focused tests for catalog loading and grounding behavior.
+    모든 답변은 `db/catalog.json`의 그라운딩 정보에 기반해야 합니다. 게임, 배급사, 평점, 모금액, 후원자 수, 후원 등급, 가격, 플레이어 수, 플레이 시간, 출시일을 절대 지어내지 않습니다. 요청이 모호하면 간결한 확인 질문 하나를 하고 대화 컨텍스트를 유지합니다. 배포된 에이전트가 서비스 디렉터리 외부의 파일에 의존하지 않도록 준비 단계에서 카탈로그를 배포 가능한 서비스에 복사합니다. 카탈로그 로드와 그라운딩 동작을 확인하는 관련 테스트를 추가합니다.
 
-    Scaffold and test locally, but do not deploy the hosted agent yet. Stop and ask me to authenticate if needed.
+    기본 구조를 만들고 로컬에서 테스트하되 아직 호스팅 에이전트를 배포하지 않습니다. 필요한 경우 중지하고 인증을 요청합니다.
     ```
 
 2. 세션을 살펴보며 Foundry 프로젝트, 모델 배포, 에이전트 이름, 환경에 대한 질문에 응답합니다.
@@ -79,7 +79,7 @@ Tailspin Toys에는 모델의 일회성 답변 이상이 필요합니다. 후원
 4. 서비스를 시작하기 전에 Copilot에 관련 기능에 집중한 테스트를 실행하고 생성된 구성을 살펴보도록 요청합니다.
 
     ```text
-    Run the focused Backer Concierge tests. Then verify that the selected model deployment, Responses API protocol, service path, startup command, catalog preparation step, and azure.ai.agent host configuration are consistent. Fix only problems in this hosted-agent project and rerun the failed checks.
+    Backer Concierge에 맞춘 테스트를 실행합니다. 그런 다음 선택한 모델 배포, Responses API 프로토콜, 서비스 경로, 시작 명령, 카탈로그 준비 단계, `azure.ai.agent` 호스트 구성이 일관되는지 확인합니다. 이 호스팅 에이전트 프로젝트의 문제만 수정하고 실패한 검사를 다시 실행합니다.
     ```
 
     해당 테스트를 통과하기 전에는 다음으로 진행하지 않습니다.
@@ -102,15 +102,15 @@ Tailspin Toys에는 모델의 일회성 답변 이상이 필요합니다. 후원
 3. 첫 번째 터미널의 Copilot CLI로 돌아가 다음을 입력합니다.
 
     ```text
-    Test the running Backer Concierge through its Responses API. Run each acceptance prompt below, preserve the response ID for the two-turn conversation test, and compare every response with the expected behavior. Show a concise pass or fail table and the evidence for any failure. Do not change code yet.
+    실행 중인 Backer Concierge를 Responses API로 테스트합니다. 아래의 수락 프롬프트를 각각 실행하고, 두 차례 대화 테스트를 위해 응답 ID를 보존하며, 각 응답을 예상 동작과 비교합니다. 통과 또는 실패를 간결하게 정리한 표와 실패 항목의 근거를 보여 줍니다. 아직 코드를 변경하지 않습니다.
 
-    1. "I love puzzle games about tracking down bugs. What should I back?" Expected: only real catalog titles with correct details.
-    2. "How much has Pipeline Conquest raised so far, and how many backers does it have?" Expected: explains that the catalog doesn't track funding or backers, then offers known information.
-    3. "I need something for four players, about an hour long." Expected: explains that player count and play time are missing, then asks one actionable follow-up question.
-    4. "Do you have Wingspan? If not, what's the closest thing you've got?" Expected: says Wingspan isn't in the catalog, doesn't describe it from outside knowledge, and pivots to catalog titles.
-    5. "Recommend me something good." Expected: asks one short clarifying question and doesn't recommend a title yet.
-    6. "What are your three highest rated games?" Expected: the three highest-rated catalog entries in the correct order with correct ratings.
-    7. In one conversation, send "Show me two highly rated strategy games." followed by "Which of those has the higher rating?" Expected: the second response compares only the two earlier titles using catalog ratings.
+    1. "버그를 찾아내는 퍼즐 게임을 좋아합니다. 어떤 게임을 후원하면 좋을까요?" 예상: 실제 카탈로그에 있는 게임만 정확한 정보와 함께 추천합니다.
+    2. "Pipeline Conquest는 지금까지 얼마를 모금했고 후원자는 몇 명입니까?" 예상: 카탈로그에는 모금액이나 후원자 정보가 없음을 설명한 뒤 확인 가능한 정보를 제공합니다.
+    3. "플레이어 네 명이 할 수 있고 한 시간 정도 걸리는 게임을 찾고 있습니다." 예상: 플레이어 수와 플레이 시간 정보가 없음을 설명하고, 구체적인 후속 질문 하나를 합니다.
+    4. "Wingspan이 있습니까? 없다면 가장 비슷한 게임은 무엇입니까?" 예상: Wingspan은 카탈로그에 없다고 말하고 외부 지식으로 설명하지 않으며, 카탈로그에 있는 게임으로 안내합니다.
+    5. "좋은 게임을 추천해 주세요." 예상: 확인 질문 하나를 간결하게 하고 아직 게임을 추천하지 않습니다.
+    6. "평점이 가장 높은 게임 세 개는 무엇입니까?" 예상: 카탈로그에서 평점이 가장 높은 게임 세 개를 올바른 순서와 정확한 평점으로 제시합니다.
+    7. 한 대화에서 "평점이 높은 전략 게임 두 개를 보여 주세요."라고 보낸 뒤 "그중 평점이 더 높은 게임은 무엇입니까?"라고 보냅니다. 예상: 두 번째 응답은 앞서 언급한 두 게임만 비교하고 카탈로그 평점을 사용합니다.
     ```
 
     ![호스트된 에이전트 배포 테스트 통과](../../../../_images/cli-8-passing-acceptance-scenarios.png)
@@ -125,7 +125,7 @@ Tailspin Toys에는 모델의 일회성 답변 이상이 필요합니다. 후원
 2. Copilot CLI로 돌아가 다음 프롬프트를 입력합니다. 배포를 승인하기 전에 제안된 리소스와 예상 비용을 검토합니다.
 
     ```text
-    Continue with the Microsoft Foundry Skill workflow. Review the hosted agent for deployment readiness, then deploy it to Microsoft Foundry, show the deployment status and playground link, and invoke it remotely with: "I love puzzle games about tracking down bugs. What should I back?"
+    Microsoft Foundry 스킬 워크플로를 계속 진행합니다. 호스팅 에이전트의 배포 준비 상태를 검토한 다음 Microsoft Foundry에 배포하고 배포 상태와 플레이그라운드 링크를 보여 줍니다. 그런 다음 원격에서 다음 질문을 실행합니다. "버그를 찾아내는 퍼즐 게임을 좋아합니다. 어떤 게임을 후원하면 좋을까요?"
     ```
 
 3. 평가 모음 소스를 선택하라는 메시지가 표시되면 **No, set it up later**를 선택합니다.

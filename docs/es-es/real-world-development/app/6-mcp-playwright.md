@@ -32,7 +32,7 @@ Dos servidores MCP populares son:
 Hay muchos otros servidores MCP que proporcionan acceso a distintas herramientas y recursos. GitHub aloja un [registro de MCP](https://github.com/mcp) para facilitar su descubrimiento y las contribuciones al ecosistema.
 
 > [!CAUTION]
-> Trata los servidores MCP como cualquier otra dependencia del proyecto. Antes de utilizar uno, revisa atentamente su código fuente, verifica el editor y considera las implicaciones de seguridad. Utiliza únicamente servidores MCP de confianza y ten cuidado al conceder acceso a recursos u operaciones confidenciales.
+> Trata los servidores MCP como cualquier otra dependencia del proyecto. Antes de utilizar uno, revisa atentamente su código fuente, verifica quién lo publica y considera las implicaciones de seguridad. Utiliza únicamente servidores MCP de confianza y ten cuidado al conceder acceso a recursos u operaciones confidenciales.
 
 ## Añadir el servidor MCP de Playwright
 
@@ -40,7 +40,7 @@ Los servidores MCP se gestionan desde **Customize** en la barra lateral. Los ser
 
 1. Selecciona **Customize** en la barra lateral.
 2. Selecciona **MCP** y comprueba en **Installed** si ya existe un servidor de Playwright.
-3. Si es necesario, busca **Playwright** entre los servidores disponibles o utiliza el procedimiento de servidor personalizado documentado por el editor.
+3. Si es necesario, busca **Playwright** entre los servidores disponibles o utiliza el procedimiento de servidor personalizado documentado por quien lo publica.
 4. Revisa el editor, la configuración y cualquier solicitud de instalación antes de aprobarla. Sigue las indicaciones para añadir el servidor; las directivas de la organización o la falta de requisitos previos pueden bloquear la configuración.
 5. Vuelve a la sesión de filtrado en modo **Interactive** y confirma que las herramientas MCP de Playwright están disponibles.
 
@@ -56,12 +56,12 @@ La incidencia y tus decisiones de planificación ya están en el contexto. Deté
     Start the app and use Playwright MCP to check filtering against the issue and our plan. Tell me what works and what doesn't, without making changes. Stop the server you started when you're done.
     ```
 
-  > [!NOTE]
-  > No es obligatorio indicar a Copilot que utilice un servidor MCP concreto; normalmente encontrará el adecuado según el contexto actual. Sin embargo, nunca está de más indicarle algo que consideras importante.
+> [!NOTE]
+> No es obligatorio indicar a Copilot que utilice un servidor MCP concreto; normalmente encontrará el adecuado según el contexto actual. Sin embargo, nunca está de más indicarle algo que consideras importante.
 
-  2. Observa cómo trabaja.
+2. Observa cómo trabaja.
 
-  Copilot iniciará el servidor, abrirá un navegador e interactuará con el sitio web. Cuando termine, detendrá el servidor y te proporcionará un informe.
+Copilot iniciará el servidor, abrirá un navegador e interactuará con el sitio web. Cuando termine, detendrá el servidor y te proporcionará un informe.
 
 ## Resumen y pasos siguientes
 

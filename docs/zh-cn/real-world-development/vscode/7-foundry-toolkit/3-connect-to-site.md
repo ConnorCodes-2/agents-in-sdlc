@@ -1,5 +1,5 @@
 ---
-title: "将代理连接到网站"
+title: "将智能体连接到网站"
 description: "通过本地代理服务连接托管的 Backer Concierge，并测试无障碍聊天小组件。"
 authors:
   - juliamuiruri4
@@ -7,10 +7,10 @@ lastUpdated: 2026-09-16
 next: false
 ---
 
-| [← 上一模块：构建并部署代理][previous-lesson] |
+| [← 上一模块：构建并部署智能体][previous-lesson] |
 |:--|
 
-本模块将[构建并部署代理][previous-lesson]中的托管代理连接到 Tailspin Toys。VS Code 中的 Copilot Chat 会创建本地集成，而不是公共生产端点。
+本模块将[构建并部署智能体][previous-lesson]中的托管智能体连接到 Tailspin Toys。VS Code 中的 Copilot Chat 会创建本地集成，而不是公共生产端点。
 
 ## 目标
 
@@ -24,9 +24,9 @@ next: false
 
 ## 继续使用工作区
 
-本次集成的目标是现有托管代理。Tailspin Toys 是完全预渲染的静态网站，因此浏览器代码无法安全保存代理的凭据。
+本次集成的目标是现有托管智能体。Tailspin Toys 是完全预渲染的静态网站，因此浏览器代码无法安全保存智能体的凭据。
 
-1. 在 VS Code 中打开同一个 Tailspin Toys 存储库，切换到 `foundry-agent-vscode` 分支。确认上一个检查点中的托管代理在现有 `tailspin-toys` 项目中仍处于 **Running** 状态，且本地 Azure 登录指向其订阅。
+1. 在 VS Code 中打开同一个 Tailspin Toys 存储库，切换到 `foundry-agent-vscode` 分支。确认上一个检查点中的托管智能体在现有 `tailspin-toys` 项目中仍处于 **Running** 状态，且本地 Azure 登录指向其订阅。
 2. 以普通 **Agent** 模式打开 Copilot Chat，而不是 **AIAgentExpert**。选择 **+**，再选择 **GitHub Issues**，然后选择 **Add a Backer Concierge assistant for catalog questions** 议题并附加。
 
 ## 构建并验证本地代理服务
@@ -50,7 +50,7 @@ next: false
    ```
 
 4. 检查终端响应。预期结果是有效的 JSON，其中 `response` 属性包含回答，且不包含虚构的价格信息、凭据或内部对话标识符。如果检查失败，让 Copilot 修复，然后重复后端测试。
-5. 选择 **Keep** 保留更改，并使用 **/clear**，在同一个存储库和分支中为小组件开启全新聊天。保留本地代理服务配置和现有托管代理连接。
+5. 选择 **Keep** 保留更改，并使用 **/clear**，在同一个存储库和分支中为小组件开启全新聊天。保留本地代理服务配置和现有托管智能体连接。
 
 ## 构建并测试小组件
 
